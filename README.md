@@ -7,6 +7,7 @@
 - [Simple vim configuration](.vimrc)
 - [Simple neovim configuration](/.config/nvim/init.vim)
 - [QuteBrowser](/.config/qutebrowser)
+- [FireFox Style](/firefox-css) - get from [minimal-firefoxcss-dark](https://github.com/ch3jun/minimal-firefoxcss-dark)
 
 --------------------------------------------------------------------------
 
