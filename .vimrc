@@ -15,3 +15,6 @@ nnoremap <C-s> :w<CR>
 
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
+
+" Accent color for cursor line highlighting
+hi CursorLine cterm=NONE ctermbg=black
