@@ -3,6 +3,13 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+c"
         },
@@ -11,15 +18,15 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
-        },
-        {
             "command": "find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            }
         },
         {
             "command": 
@@ -29,13 +36,6 @@
         },
         {
             "command": "paste"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "backward"
-            }
         },
         {
             "command": 
@@ -111,6 +111,11 @@
                 "hidden": false,
                 "name": "PowerShell 7",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "name": "Git Bash",
+                "source": "Git"
             }
         ]
     },
