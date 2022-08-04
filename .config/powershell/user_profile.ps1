@@ -1,12 +1,10 @@
-# Prompt 
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt Parado
+# Prompt Command need to Executed
+
 
 # Load Prompt Config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
-$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) "user.omp.json"
-oh-my-posh --init --shell pwsh --config $PROMPT_CONFIG | Invoke-Expression
+$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) "zhenc.omp.json"
+oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 Import-Module Terminal-Icons
 
