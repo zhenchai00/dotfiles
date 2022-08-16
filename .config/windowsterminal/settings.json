@@ -1,7 +1,18 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
+        {
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "prevTab"
+            },
+            "keys": "ctrl+n"
+        },
         {
             "command": 
             {
@@ -10,16 +21,23 @@
             }
         },
         {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
+            }
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+c"
         },
         {
             "command": "unbound",
             "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -35,9 +53,6 @@
             }
         },
         {
-            "command": "paste"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -45,20 +60,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "forward"
-            }
-        },
-        {
-            "command": 
-            {
-                "action": "prevTab"
-            },
-            "keys": "ctrl+n"
         },
         {
             "command": 
@@ -78,24 +79,22 @@
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.5,
             "colorScheme": "One Half Dark (modded)",
             "font": 
             {
                 "face": "Hack NF"
             },
+            "opacity": 50,
             "useAcrylic": true
         },
         "list": 
         [
             {
-                "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -107,15 +106,17 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "guid": "{5fb123f1-af88-5b5c-8953-d14a8def1978}",
-                "hidden": false,
-                "name": "PowerShell 7",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
                 "name": "Git Bash",
                 "source": "Git"
+            },
+            {
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+                "guid": "{af3b4098-8a7e-47eb-9bee-e6941101b6a1}",
+                "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_black.ico",
+                "name": "PowerShell",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
