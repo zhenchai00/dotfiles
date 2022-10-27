@@ -1,6 +1,7 @@
 syntax on
 " Show line number 
 set number
+set relativenumber
 
 " Set cursor line for current line
 set cursorline
