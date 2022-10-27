@@ -1,6 +1,7 @@
 #####################################################################
 # Oh My Zsh Section
 #####################################################################
+# Installation can refer to here https://github.com/ohmyzsh/ohmyzsh#basic-installation
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -46,9 +47,9 @@ SAVEHIST=10000
 # Plugins
 #####################################################################
 plugins=(
-	zsh-syntax-highlighting
-	zsh-history-substring-search
-	zsh-autosuggestions
+	zsh-syntax-highlighting 		# https://github.com/zsh-users/zsh-syntax-highlighting
+	zsh-history-substring-search 	# https://github.com/zsh-users/zsh-history-substring-search
+	zsh-autosuggestions				# https://github.com/zsh-users/zsh-autosuggestions
 )
 # Special option for history-substring-search
 # bind UP and DOWN arrow keys to history substring search
@@ -75,3 +76,4 @@ alias egrep="egrep --colour=auto"
 alias fgrep="fgrep --colour=auto"
 
 alias g="git"
+alias v="nvim"
