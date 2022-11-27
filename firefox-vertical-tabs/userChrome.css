@@ -125,6 +125,8 @@
     [inDOMFullscreen="true"] .titlebar-buttonbox-container {
         transform: translateY(-100px)
     }
+    
+    
 }
 
 /* Windows specific styles */
@@ -229,7 +231,7 @@
     }
 
     :root[inFullscreen] #nav-bar {
-        border-inline: none !important;
+        border-right: none !important;
     }
 }
 
