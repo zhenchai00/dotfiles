@@ -1,9 +1,11 @@
 # Prompt Command need to Executed
-
+# Import-Module posh-git
+# Import-Module oh-my-posh
+# Set-PoshPrompt Parado
 
 # Load Prompt Config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
-$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) "zhenc.omp.json"
+$PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) "GIGABYTE.omp.json"
 oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 Import-Module Terminal-Icons
@@ -15,8 +17,8 @@ Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 Set-PSReadLineOption -PredictionSource History
 
 # Fzf
-Import-Module PSFzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+# Import-Module PSFzf
+# Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Alias
 Set-Alias ll ls
