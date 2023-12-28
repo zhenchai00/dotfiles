@@ -1,9 +1,9 @@
 # Path to your oh-my-bash installation.
-export OSH=/home/cz/.oh-my-bash
+# export OSH=/home/cz/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="agnoster"
+OSH_THEME="brainy"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -79,11 +79,11 @@ source $OSH/oh-my-bash.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -99,5 +99,7 @@ source $OSH/oh-my-bash.sh
 # Example aliases
 alias bashconfig="mate ~/.bashrc"
 alias ohmybash="mate ~/.oh-my-bash"
-alias update="sudo apt update && sudo apt upgrade"
-alias g="git"
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi

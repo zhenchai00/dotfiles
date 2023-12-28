@@ -1,0 +1,6 @@
+alias update="sudo apt update && sudo apt upgrade"
+alias g="git"
+alias v="vim"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"

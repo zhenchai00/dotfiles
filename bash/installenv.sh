@@ -30,6 +30,16 @@ else
     cp ../.gitconfig "$USER_HOME/"
 fi
 
+# Install oh-my-bash
+# More info please refer to https://github.com/ohmybash/oh-my-bash/wiki
+echo "Updating bash shell ......."
+echo "Installing oh-my-bash ......."
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+echo "Overwrite .bashrc ......."
+cp ../.bashrc "$USER_HOME/"
+cp ../.bash_aliases "$USER_HOME/"
+source "$USER_HOME/.bashrc"
+
 # Configure Docker
 which docker
 if [ $? -eq 0 ]; then
