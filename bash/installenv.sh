@@ -36,13 +36,13 @@ fi
 (
     echo "Updating bash shell ......."
     echo "Installing oh-my-bash ......."
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" --unattended
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" --unattended
 )
 
 # Copy .bashrc to home directory
 echo "Overwrite .bashrc ......."
-cp ../.bashrc "$USER_HOME/"
-cp ../.bash_aliases "$USER_HOME/"
+cp .bashrc "$USER_HOME/"
+cp .bash_aliases "$USER_HOME/"
 source "$USER_HOME/.bashrc"
 
 # Configure Docker
