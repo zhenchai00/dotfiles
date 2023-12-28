@@ -36,7 +36,7 @@ fi
 (
     echo "Updating bash shell ......."
     echo "Installing oh-my-bash ......."
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" --unattended
 )
 
 # Copy .bashrc to home directory
