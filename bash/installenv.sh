@@ -41,6 +41,7 @@ fi
 
 # Copy .bashrc to home directory
 echo "Overwrite .bashrc ......."
+export OSH="$USER_HOME/.oh-my-bash"
 cp .bashrc "$USER_HOME/"
 cp .bash_aliases "$USER_HOME/"
 source "$USER_HOME/.bashrc"
