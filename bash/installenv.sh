@@ -35,6 +35,7 @@ fi
 echo "Updating bash shell ......."
 echo "Installing oh-my-bash ......."
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+exit
 echo "Overwrite .bashrc ......."
 cp ../.bashrc "$USER_HOME/"
 cp ../.bash_aliases "$USER_HOME/"
