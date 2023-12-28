@@ -18,7 +18,7 @@ sudo apt install neovim git -y
 # git config --global core.editor "vim"
 # Check if .gitconfig exists
 if [ -f "$USER_HOME/.gitconfig" ]; then
-    read -p ".gitconfig already exists. Do you want to overwrite it? (Y/n) "
+    read -p ".gitconfig already exists. Do you want to overwrite it? (Y/n) " overwrite_response
     if [[ "$overwrite_response" =~ ^[Yy]$ ]]; then
         echo "Copying .gitconfig to $USER_HOME"
         cp ../.gitconfig "$USER_HOME/"
