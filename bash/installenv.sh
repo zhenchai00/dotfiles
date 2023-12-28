@@ -41,10 +41,8 @@ fi
 
 # Copy .bashrc to home directory
 echo "Overwrite .bashrc ......."
-export OSH="$USER_HOME/.oh-my-bash"
 cp .bashrc "$USER_HOME/"
 cp .bash_aliases "$USER_HOME/"
-source "$USER_HOME/.bashrc"
 
 # Configure Docker
 which docker
@@ -78,3 +76,4 @@ else
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 fi
 
+source "$USER_HOME/.bashrc"
