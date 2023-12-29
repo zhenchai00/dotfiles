@@ -20,8 +20,9 @@ if [[$? -eq 0]]; then
     echo "Fuzzy Finder FZF already installed"
 else
     echo "Installing Fuzzy Finder FZF ......."
-    git clone --depth 1 https://github.com/junegunn/fzf.git $USER_HOME/fzf
-    $USER_HOME/fzf/install --all
+    sudo apt install fzf -y
+    # git clone --depth 1 https://github.com/junegunn/fzf.git $USER_HOME/fzf
+    # $USER_HOME/fzf/install --all
 fi
 
 # Install git
