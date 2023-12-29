@@ -52,6 +52,7 @@ OSH_THEME="brainy"
 # Add wisely, as too many completions slow down shell startup.
 completions=(
   git
+  npm
   composer
   ssh
 )
@@ -118,3 +119,7 @@ alias ohmybash="mate ~/.oh-my-bash"
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# use arrow keys up and down to search history
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
