@@ -8,10 +8,30 @@ echo "Installation start ......."
 echo "Update & upgrade package ......."
 sudo apt update -y && sudo apt upgrade -y
 
-# Install packages
-echo "Installing neovim, git ......."
-sudo apt install neovim git -y
+# Prepare tools directory
+if [[ ! -d "$USER_HOME/tools" ]]; then
+    echo "Creating tools directory ......."
+    mkdir -p "$USER_HOME/tools"
+fi
 
+# Install Fuzzy Finder FZF
+which fzf
+if [[$? -eq 0]]; then
+    echo "Fuzzy Finder FZF already installed"
+else
+    echo "Installing Fuzzy Finder FZF ......."
+    git clone --depth 1 https://github.com/junegunn/fzf.git $USER_HOME/fzf
+    $USER_HOME/fzf/install --all
+fi
+
+# Install git
+which git
+if [[$? -eq 0]]; then
+    echo "Git already installed"
+else
+    echo "Installing git ......."
+    sudo apt install git -y
+fi
 # Configure git
 # git config --global user.email "zhenchai0000@gmail.com"
 # git config --global user.name "zhenchai"
@@ -29,6 +49,21 @@ else
     echo "Copying .gitconfig to $USER_HOME"
     cp ../.gitconfig "$USER_HOME/"
 fi
+
+# Install neovim
+which nvim
+if [[$? -eq 0]]; then
+    echo "Neovim already installed"
+else
+    echo "Installing neovim ......."
+    sudo apt install neovim -y
+fi
+if [[ ! -d "$USER_HOME/.config/nvim" ]]; then
+    echo "Creating nvim config directory ......."
+    mkdir -p "$USER_HOME/.config/nvim"
+fi
+echo "Copying init.vim to $USER_HOME/.config/nvim"
+cp ../.config/nvim/init.vim "$USER_HOME/.config/nvim/"
 
 # Install oh-my-bash
 # More info please refer to https://github.com/ohmybash/oh-my-bash/wiki
