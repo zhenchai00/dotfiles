@@ -1,5 +1,6 @@
 alias update="sudo apt update && sudo apt upgrade"
 alias g="git"
+alias gs="git status"
 alias v="vim"
 alias ll="ls -alF"
 alias la="ls -A"
