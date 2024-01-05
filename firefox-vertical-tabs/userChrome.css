@@ -28,7 +28,8 @@
 }
 
 /* Linux/GTK specific styles */
-@media (-moz-gtk-csd-available) {
+@media (-moz-gtk-csd-available), 
+       (-moz-platform: linux) {
     .browser-toolbar:not(.titlebar-color){ /* Fixes wrong coloring applied with --toolbar-bgcolor by Firefox (#101) */
         background-color: transparent !important;
         box-shadow: none !important;
@@ -268,6 +269,7 @@
 
 [sidebarcommand*="tabcenter"] #sidebar,
 #sidebar-box[sidebarcommand*="tabcenter"] {
+    display: block !important;
     min-width: 48px !important;
     max-width: 48px !important;
     width: 48px;
