@@ -1,0 +1,4 @@
+#TabsToolbar:not([customizing="true"]) {
+    visibility: collapse !important;
+}
+
