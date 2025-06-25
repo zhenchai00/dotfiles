@@ -17,7 +17,7 @@
 - [Simple vim configuration](.vimrc)
 - [Simple neovim configuration](/.config/nvim/init.vim)
 - [QuteBrowser](/.config/qutebrowser)
-- [firefox-vertical-tabs](/firefox-vertical-tabs) - get from [firefox-vertical-tabs](https://github.com/ranmaru22/firefox-vertical-tabs) - Look familiar with the Microsoft Edge Vertical Tabs features
+- [firefox-vertical-tabs](/firefox-vertical-tabs) - get from [VerticalFox](https://github.com/christorange/VerticalFox)
 - [minimal-firefoxcss-dark](/minimal-firefoxcss-dark) - get from [minimal-firefoxcss-dark](https://github.com/ch3jun/minimal-firefoxcss-dark) - minimalist with dark theme and vertical tabs
 
 --------------------------------------------------------------------------
